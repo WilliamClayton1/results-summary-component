@@ -1,0 +1,51 @@
+@import "resets.css";
+@import "layout.css";
+
+:root {
+    --very-light-blue: #ECF2FF;
+    --gradient-1: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
+}
+.page-wrapper {
+    background-color: var(--very-light-blue);
+}
+.right-side.row {
+    background-color: #fff;
+    max-width: 736px;
+    max-height: 512px;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+}
+.column {
+    max-width: 288px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+section.left-side.row {
+    background: var(--gradient-1);
+    color: white;
+    max-width: 368px;
+    height: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+.great {
+    flex-direction: column;
+    align-items: center;
+}
+.great p {
+    text-align: center;
+    max-width: 260px;
+}
+#largest {
+    font-size: 72px;
+}
+.score.row {
+    flex-direction: column;
+    align-items: center;
+}
