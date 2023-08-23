@@ -1,9 +1,14 @@
 @import "resets.css";
 @import "layout.css";
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --very-light-blue: #ECF2FF;
     --gradient-1: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
+    --gradient-2: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0.00) 100%, rgba(37, 33, 201, 0.00) 100%);
+}
+body {
+    font-family: "Hanken Grotesk", sans-serif;
 }
 .page-wrapper {
     background-color: var(--very-light-blue);
@@ -46,6 +51,10 @@ section.left-side.row {
     font-size: 72px;
 }
 .score.row {
+    background: var(--gradient-2);
+    max-width: 200px;
+    max-height: 200px;
     flex-direction: column;
     align-items: center;
+    border-radius: 999px;
 }
