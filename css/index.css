@@ -20,6 +20,7 @@ body {
     flex-direction: column;
     align-items: end;
     position: relative;
+    border-radius: 32px;
 }
 .column {
     max-width: 288px;
@@ -38,10 +39,13 @@ section.left-side.row {
     left: 0;
     justify-content: center;
     align-items: center;
+    border-radius: 32px;
+    gap: 35px;
 }
 .great {
     flex-direction: column;
     align-items: center;
+    gap: 14px;
 }
 .great p {
     text-align: center;
@@ -56,5 +60,14 @@ section.left-side.row {
     max-height: 200px;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 55px 60px;
     border-radius: 999px;
+}
+
+.colorChange {
+    color: var(--very-light-blue)
+}
+.group {
+    max-width: 288px;
 }
