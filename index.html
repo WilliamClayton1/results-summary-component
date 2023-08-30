@@ -2,62 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="css/style.css">
   
   <title>Frontend Mentor | Results summary component</title>
+
 </head>
 <body>
-  <main class="page-wrapper justify-content-center align-items-center">
-    <section class="right-side row flex-grow">
-        <div class="summary column align-items-start">
-          <p>Summary</p>
+  <div class="page-wrapper justify-content-center align-items-center">
+    <div class="container">
+      <div class="leftSide row flex-column align-items-center justify-content-evenly">
+        <div class="column">
+          <h2 class="resultsWord">Your Result</h2>
         </div>
-        <div class="group">
-          <div class="column flex-grow">
-            <div class="column">
+        <div class="column justify-content-center mainResult">
+          <h1 style="text-align: center; font-size: 72px; color: #ffffff; line-height: 72px">76</h1>
+          <p style="text-align: center; color: var(--light-blue)">of 100</p>
+        </div>
+        <div class="column">
+          <h1 style="text-align: center; color: #ffffff; padding-bottom: 5px">Great</h1>
+          <p style="width: 25ch; text-align: center; color: var(--light-blue)">Your performance exceed 65% of the people conducting the test here!</p>
+        </div>
+      </div>
+
+      <div class="rightSide row flex-column align-items-center justify-content-evenly">
+        <div class="summary">
+          <h2>Summary</h2>
+        </div>
+
+        <div class="d-flex flex-column results">
+          <div class="d-flex justify-content-between reaction">
+            <div class="d-flex icon">
               <img src="images/icon-reaction.svg" alt="reaction icon">
               <p>Reaction</p>
             </div>
-            <p>80 / 100</p>
+            <p style="color: var(--dark-navy)">80 <span style="opacity: 50%">/ 100</span></p>
           </div>
-          <div class="column">
-            <div class="column">
+
+          <div class="d-flex justify-content-between memory">
+            <div class="d-flex icon">
               <img src="images/icon-memory.svg" alt="memory icon">
               <p>Memory</p>
             </div>
-            <p>92 / 100</p>
+            <p style="color: var(--dark-navy)">92 <span style="opacity: 50%">/ 100</span></p>
           </div>
-          <div class="column">
-            <p>Verbal</p>
-            <p>61 / 100</p>
+
+
+          <div class="d-flex justify-content-between verbal">
+            <div class="d-flex icon">
+              <img src="images/icon-verbal.svg" alt="verbal icon">
+              <p>Verbal</p>
+            </div>
+            <p style="color: var(--dark-navy)">61 <span style="opacity: 50%">/ 100</span></p>
           </div>
-          <div class="column">
-            <p>Visual</p>
-            <p>72 / 100</p>
+
+
+          <div class="d-flex justify-content-between visual">
+            <div class="d-flex icon">
+              <img src="images/icon-visual.svg" alt="visual icon">
+              <p>Visual</p>
+            </div>
+            <p style="color: var(--dark-navy)">72 <span style="opacity: 50%">/ 100</span></p>
           </div>
         </div>
-        <div class="button column align-items-center">
-          <p>Continue</p>
+
+        <div class="column">
+          <button type="submit">Continue</button>
         </div>
-      <section class="left-side row">
-        <div class="result d-flex align-items-center justify-content-center">
-          <p class="colorChange" style="font-size: 24px;">Your Result</p>
-        </div>
-        <div class="score row">
-          <h1 id="largest">76</h1>
-          <p class="colorChange">of 100</p>
-        </div>
-        <div class="great d-flex">
-          <h2>Great</h2>
-          <p class="colorChange">Your performance exceed 65% of the people conducting the test here!</p>
-        </div>
-      </section>
-    </section>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">William Clayton</a>.
+
+      </div>
     </div>
-  </main>
+  </div>
+
+
+  
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">William Clayton</a>.
+  </div>
 </body>
 </html>
