@@ -86,6 +86,23 @@ button:hover {
     background: var(--gradient-1);
     border-radius: 32px;
 }
+ .result {
+    text-align: center;
+    font-size: 72px;
+    color: #ffffff;
+    line-height: 72px;
+}
+h1.size {
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 5px;
+    font-size: 32px;
+}
+.paragraph {
+    width: 25ch;
+    text-align: center;
+    color: var(--light-blue);
+}
 .mainResult {
     background: var(--gradient-2);
     width: 200px;
@@ -100,9 +117,31 @@ button:hover {
 }
 
 @media (max-width: 710px) {
+    .page-wrapper {
+        height:100vh;
+    }
     .container {
         flex-direction: column;
         height: 100%;
         max-width: 375px;
+        border-radius: unset;
+    }
+    .leftSide {
+        height: 356px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .mainResult {
+        width: 140px;
+        height: 140px;
+    }
+    div.mainResult>h1 {
+        font-size: 56px;
+    }
+    h1.size {
+        font-size: 24px;
+    }
+    .rightSide {
+        height: 453px;
     }
 }
